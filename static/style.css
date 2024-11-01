@@ -1,0 +1,130 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2C1810;
+    color: #F4D03F;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(44, 24, 16, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #FFD700;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #B8860B;
+    padding-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #DAA520;
+    border-left: 4px solid #B8860B;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(139, 69, 19, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.menu-item:hover {
+    background-color: rgba(139, 69, 19, 0.4);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #B8860B;
+}
+
+.menu-item-content {
+    flex-grow: 1;
+    margin-right: 80px;
+    /* Fiyat için alan bırakıyoruz */
+}
+
+.item-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #F4D03F;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.price {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgba(44, 24, 16, 0.7);
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #B8860B;
+}
+
+.description {
+    color: #CD853F;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #B8860B;
+    color: #DAA520;
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .menu-item-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu-item-content {
+        margin-right: 0;
+    }
+
+    .price {
+        position: absolute;
+        bottom: 10px;
+        top: auto;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
