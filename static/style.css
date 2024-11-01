@@ -16,6 +16,15 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
 h1 {
     text-align: center;
     color: #FFD700;
@@ -122,9 +131,10 @@ footer {
 
     .price {
         position: absolute;
-        bottom: 10px;
+        bottom: 4px;
         top: auto;
         right: 50%;
         transform: translateX(50%);
+        padding: 6px 8px;
     }
 }
